@@ -1,0 +1,21 @@
+(library
+  (name gwdb_legacy_x_arangodb)
+  (implements geneweb.gwdb_driver)
+  (libraries
+    curl
+    geneweb.def
+    geneweb.util
+    jsonaf
+    syslog
+    yojson
+  )
+  (modules
+    gwdb_driver
+    gwdb_driver_arango
+    gwdb_driver_legacy
+    gwdb_driver_env
+    http_curl
+    json
+    json_jsonaf
+  )
+)
